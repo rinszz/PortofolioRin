@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Rinn</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16"></script> 
   <script src="https://kit.fontawesome.com/a2d8d6a96d.js" crossorigin="anonymous"></script>
   <style>
     html {
@@ -100,31 +101,30 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="home" class="min-h-screen flex items-center justify-center text-center pt-24 opacity-0 translate-y-10 transition duration-1000 ease-out">
-    <div>
-      <img src="https://files.catbox.moe/n72c4z.jpg" alt="avatar" class="w-32 h-32 rounded-full mx-auto border-4 border-indigo-500 mb-4" />
-      <h2 class="text-4xl font-bold">Hi, I'm <span class="text-indigo-400">Rinn</span></h2>
-      <p class="mt-2 text-lg text-gray-400">Bot Developer & Editor</p>
-    </div>
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center flex-col text-center px-4 pt-20">
+    <img src="https://files.catbox.moe/n72c4z.jpg" alt="avatar" class="w-32 h-32 rounded-full mx-auto border-4 border-indigo-500 mb-4" />
+    <h2 class="text-4xl md:text-6xl font-extrabold">Halo, I'm <span class="text-purple-500">Rinn</span></h2>
+    <p class="text-lg mt-4 text-gray-300">I'm a Bot Developer<span id="typed"></span></p>
+    <a href="#contact" class="mt-8 px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full">Hire Me</a>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-20 px-6 bg-gray-90 opacity-0 translate-y-10 transition duration-1000 ease-out">
+  <section id="about" class="py-6 px-6 bg-gray-90 mb-6 opacity-0 translate-y-10 transition duration-1000 ease-out">
     <div class="max-w-4xl mx-auto text-center">
       <h3 class="text-3xl font-semibold mb-6">About Me</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
-      <p class="text-gray-300">
-        Haloo, Nama Saya Rinn Umur Saya Masih 15 Tahun, Saya Berasal Dari Jateng, Hobi Saya Ngoding, Bahasa Pemrograman Yang Saya Pelajarai Yaitu Javascript, Html, Css Dan Python.
-      </p>
+          <p class="text-gray-300">
+            Haloo, Nama Saya Rinn Umur Saya Masih 15 Tahun, Saya Berasal Dari Jateng, Hobi Saya Ngoding, Bahasa Pemrograman Yang Saya Pelajari Yaitu Javascript, Html, Css Dan Python.
+          </p>
+        </div>
+      </div>
     </div>
-   </div>
-  </div>
- </section>
+  </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-20 px-6 opacity-0 translate-y-10 transition duration-1000 ease-out">
+  <section id="skills" class="py-6 px-6 mb-6 opacity-0 translate-y-10 transition duration-1000 ease-out">
     <div class="max-w-5xl mx-auto">
       <h3 class="text-3xl font-semibold text-center mb-10">My Skills</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -141,7 +141,7 @@
   </section>
 
   <!-- Supporters -->
-  <section class="py-20 px-6 bg-gray-90">
+  <section class="py-6 px-6 bg-gray-90 mb-6">
     <div class="max-w-4xl mx-auto text-center">
       <h3 class="text-3xl font-semibold text-indigo-400 mb-6">Thanks to</h3>
       <div class="flex flex-wrap justify-center gap-4 text-white">
@@ -153,30 +153,33 @@
   </section>
 
   <!-- Contact Section -->
-<section id="contact" class="py-20 px-6 bg-gray-90 opacity-0 translate-y-10 transition duration-1000 ease-out">
-  <div class="max-w-3xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold mb-6">My Contact</h3>
-         <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
-          <div class="flex justify-center gap-8 text-white text-2xl"> 
-      <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-pink-500 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
-        </svg>
-      </a>
-      <a href="https://tiktok.com/@cgraftermewing" target="_blank" class="hover:text-white transition">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M12.378 2.002h3.198a5.243 5.243 0 0 0 5.238 5.238v3.197a8.435 8.435 0 0 1-5.238-1.8v7.94c0 3.637-2.948 6.585-6.585 6.585S2.41 20.214 2.41 16.577c0-3.637 2.948-6.585 6.585-6.585.57 0 1.122.074 1.65.213v3.375a3.275 3.275 0 0 0-1.65-.451 3.21 3.21 0 0 0 0 6.42 3.21 3.21 0 0 0 3.209-3.209V2.002z"/>
-        </svg>
-      </a>
-      <a href="https://t.me/yourusername" target="_blank" class="hover:text-blue-400 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M9.472 15.893l-.392 4.282c.562 0 .805-.241 1.099-.53l2.64-2.528 5.472 3.993c1.005.553 1.727.262 1.985-.93L23.94 3.646c.31-1.363-.524-1.898-1.47-1.558L1.448 9.274c-1.377.526-1.36 1.276-.235 1.611l5.925 1.85 13.733-8.649L9.472 15.893z"/>
-         </svg>
-       </a>
-     </div>
-   </div>
-  </div>
-</section>
+  <section id="contact" class="py-6 px-6 bg-gray-90 mb-6 opacity-0 translate-y-10 transition duration-1000 ease-out">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">My Contact</h3>
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition">
+        <div class="flex justify-center gap-8 text-white text-2xl"> 
+          <a href="https://instagram.com/verinzz19" target="_blank" class="hover:text-pink-500 transition">
+            <!-- Instagram SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com/@cgraftermewing" target="_blank" class="hover:text-white transition">
+            <!-- TikTok SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M12.378 2.002h3.198a5.243 5.243 0 0 0 5.238 5.238v3.197a8.435 8.435 0 0 1-5.238-1.8v7.94c0 3.637-2.948 6.585-6.585 6.585S2.41 20.214 2.41 16.577c0-3.637 2.948-6.585 6.585-6.585.57 0 1.122.074 1.65.213v3.375a3.275 3.275 0 0 0-1.65-.451 3.21 3.21 0 0 0 0 6.42 3.21 3.21 0 0 0 3.209-3.209V2.002z"/>
+            </svg>
+          </a>
+          <a href="https://t.me/rinn1907" target="_blank" class="hover:text-blue-400 transition">
+            <!-- Telegram SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M9.472 15.893l-.392 4.282c.562 0 .805-.241 1.099-.53l2.64-2.528 5.472 3.993c1.005.553 1.727.262 1.985-.93L23.94 3.646c.31-1.363-.524-1.898-1.47-1.558L1.448 9.274c-1.377.526-1.36 1.276-.235 1.611l5.925 1.85 13.733-8.649L9.472 15.893z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center py-6 text-gray-500 bg-gray-950">
@@ -204,8 +207,7 @@
       }, { threshold: 0.2 });
       sections.forEach(section => observer.observe(section));
     });
-
   </script>
 
 </body>
-</html>
+        </html>
